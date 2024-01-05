@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title> DOM </title>
+</head>
+
+<body>
+  <h1 id="apple">Hello</h1>
+  <h2>heading 2</h2>
+  <button onclick="run1()">Click to change</button>
+  <script>
+    function run1() {
+      h = document.getElementById('apple')
+      h.innerHTML = 'hai'
+      h.style.color = 'red'
+      h.style.backgroundcolor = 'skyblue'
+      h.style.fontsize = '22px'
+      h.style.padding = '10px'
+    }
+  </script>
+  <style>
+    h2 {
+      background-color: skyblue;
+      font-size: 22px;
+    }
+  </style>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+  <p class="bat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sunt itaque necessitatibus sint
+    voluptatem officia ipsam commodi delectus saepe beatae aliquam ducimus fugit non ea animi porro, reprehenderit quae
+    eligendi.</p>
+  <p class="bat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sunt itaque necessitatibus sint
+    voluptatem officia ipsam commodi delectus saepe beatae aliquam ducimus fugit non ea animi porro, reprehenderit quae
+    eligendi.</p>
+  <p class="bat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sunt itaque necessitatibus sint
+    voluptatem officia ipsam commodi delectus saepe beatae aliquam ducimus fugit non ea animi porro, reprehenderit quae
+    eligendi.</p>
+  <p class="bat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sunt itaque necessitatibus sint
+    voluptatem officia ipsam commodi delectus saepe beatae aliquam ducimus fugit non ea animi porro, reprehenderit quae
+    eligendi.</p>
+  <b>hai how are you</b>
+  <b>hai how are you</b>
+  <b>hai how are you</b>
+  <script>
+    bat = documentsbyclassname('bat')
+    bat[0].style.color = 'blue'
+    bat[1].style.color = 'red'
+    bat[2].style.color = 'brown'
+    bat[3].style.color = 'yellow'
+
+    for (let i = 0; i < bat.length; i++) {
+      bat[i].style.backgroundcolor = 'pink'
+
+    }
+
+    bold = documentsbyclassname('b')
+    for (let i = 0; i < bold.length; i++) {
+      bold[i].style.backgroundcolor = 'red'
+
+    }
+
+    j = document.querySelector(".bat")
+    console.log(j);
+
+    k = document.querySelector(".bat")
+    console.log(k);
+  </script>
+
+
+</body>
+
+</html>
